@@ -591,3 +591,69 @@ button#Calculate {
   background-color: var(--color-secondary);
   cursor: pointer;
 }
+/* === SPECIAL SECTION === */
+.section-Sp {
+  width: var(--Desktop-width);
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  margin: var(--margin-min);
+}
+.daily-exr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.section-Sp section {
+  width: min(32rem, 576px);
+  display: block;
+  background-color: var(--Bg-second);
+  border-radius: 0.5rem;
+  background-image: linear-gradient(313deg, black, transparent);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  padding: 1rem;
+  line-height: 1.55;
+}
+.section-Sp section:nth-child(1) {
+  background-image: linear-gradient(313deg, black, transparent),
+    url(./assets/images/exercises-1.jpg);
+  text-align: right;
+}
+.section-Sp section:nth-child(2) {
+  background-image: linear-gradient(-313deg, black, transparent),
+    url(./assets/images/exercises-2.jpg);
+  text-align: left;
+}
+.section-Sp section:nth-child(3) {
+  background-image: linear-gradient(313deg, black, transparent),
+    url(./assets/images/exercises-3.jpg);
+  text-align: right;
+}
+.section-Sp section:nth-child(4) {
+  background-image: linear-gradient(-313deg, black, transparent),
+    url(./assets/images/exercises-4.jpg);
+  text-align: left;
+}
+h3.section-Sp-title {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+.section-Sp section article.Innertext {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 60%;
+}
+#line-end {
+  float: inline-end;
+}
