@@ -256,6 +256,8 @@ main {
   overflow: hidden;
   backdrop-filter: blur(25px);
 }
+
+/* === SECTION === 1 */
 main > .section-1 > h1,
 p.sec-desc {
   text-align: center;
@@ -302,4 +304,61 @@ p.sec-desc.text-muted {
 .section-img-info h3.section-h3-title {
   font-size: 1.4vw;
   margin-bottom: 0.5rem;
+}
+/* === SECTION === 2 */
+.section-2 {
+  width: var(--Desktop-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.77rem;
+  line-height: 1.2;
+  margin: var(--margin-min);
+  background-color: var(--Bg-second);
+}
+.section-2 .section2-imgBox {
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 44vh;
+}
+.section-2 img.section2-img {
+  display: block;
+  max-width: 100%;
+  scale: 1.33;
+  margin-left: -3rem;
+  margin-top: 2rem;
+  background-position: center;
+  scale: 3;
+  translate: -5rem 5rem;
+}
+.section-2-infos-btn {
+  width: 32rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-2 h2.section-2-title {
+  font-size: clamp(1.88rem, 5vw, 3rem);
+  font-weight: bolder;
+}
+.section-2 .section2-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-2 .section2-btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.77rem;
+  width: 40%;
+  text-align: center;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  font-size: 1rem;
+  cursor: pointer;
 }
