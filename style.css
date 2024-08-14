@@ -1096,3 +1096,24 @@ footer p.right-reserved {
     padding: 10px 20px;
   }
 }
+@media only screen and (max-width: 375px) {
+  .section-2 .section2-imgBox {
+    height: 39vh;
+  }
+  .section-2 img.section2-img {
+    scale: 2;
+    translate: -1.5rem 0rem;
+  }
+  th {
+    font-size: 0.88rem;
+  }
+  .section-4 h2.section-title {
+    font-size: 1.5rem;
+  }
+  .section-4 p.section-desc.text-muted {
+    font-size: 1rem;
+  }
+  .section-Sp section {
+    background-size: 135%;
+  }
+}
