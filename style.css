@@ -246,3 +246,60 @@ p.sec-desc {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+/* === MAIN === */
+main {
+  display: block;
+  width: 100%;
+  margin-top: -1rem;
+  background-color: var(--Bg-color);
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+}
+main > .section-1 > h1,
+p.sec-desc {
+  text-align: center;
+}
+h1.hr-title {
+  font-size: clamp(2.33rem, 5vw, 2.5rem);
+  position: relative;
+  z-index: 1;
+}
+p.sec-desc.text-muted {
+  padding-top: 2rem;
+  line-height: 1.22;
+}
+.section-1 .section_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.section-1 .section_section .section-img-info {
+  text-align: center;
+  width: 12rem;
+}
+.section-1 .section_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 6rem;
+  margin-top: 3rem;
+}
+.section-img-info > img.section-img {
+  display: inline-block;
+  width: 13rem;
+  max-width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid var(--Bg-second);
+  margin-bottom: 1rem;
+}
+.section-img-info h3.section-h3-title {
+  font-size: 1.4vw;
+  margin-bottom: 0.5rem;
+}
