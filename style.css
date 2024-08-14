@@ -657,3 +657,52 @@ h3.section-Sp-title {
 #line-end {
   float: inline-end;
 }
+/* === SECTION === 5 */
+.section-5 {
+  text-align: center;
+}
+.trainers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: var(--Desktop-width);
+  margin: var(--margin-min);
+  margin-top: 0;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--Bg-second);
+  border-radius: 0.88rem;
+  overflow: hidden;
+}
+.trainers > .trainer-img-name {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.77rem;
+}
+.trainer-img-name > img.trainer-img {
+  display: block;
+  width: 30vw;
+  height: 45vh;
+  max-width: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+span.trainer-name {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 100%;
+  text-align: left;
+  line-height: 1.4;
+  font-size: clamp(0.99rem, 2vw, 1.22rem);
+  color: var(--text-muted);
+}
+span.trainer-name::first-line {
+  font-size: clamp(1.3rem, 3vw, 1rem);
+  color: var(--color-primary);
+  font-weight: bolder;
+}
+.trainers > .trainer-img-name:nth-child(1),
+.trainers > .trainer-img-name:nth-child(4) {
+  display: block;
+}
