@@ -706,3 +706,73 @@ span.trainer-name::first-line {
 .trainers > .trainer-img-name:nth-child(4) {
   display: block;
 }
+/* === FOOTER === */
+footer {
+  display: block;
+  text-align: left;
+  width: 100%;
+  background-color: var(--Bg-second);
+  line-height: 1.5;
+  padding: 30px 100px;
+}
+.footer_footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+.footer-title,
+.footer-menu {
+  width: 50%;
+}
+.footer-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 2rem;
+}
+a.footer-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-style: italic;
+  font-weight: bolder;
+  margin-left: 15%;
+  color: var(--color-secondary);
+}
+.footer-desc {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2rem;
+  font-size: var(--fontSize-small);
+}
+h2.footer-title-second {
+  font-size: clamp(1.8rem, 3vw, 1.5rem);
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+a.services {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: clamp(1.11rem, 3vw, 1rem);
+  font-weight: 300;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  transition: all 0.15s ease-in;
+}
+a.services:focus {
+  color: var(--color-primary);
+}
+footer hr {
+  margin: 1.5rem 0;
+  background-color: var(--bg-third);
+  border-radius: 1rem;
+}
+footer p.right-reserved {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
